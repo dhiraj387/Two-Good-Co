@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Varela Round", sans-serif; */
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #f7f7f7;
+}
+
+#nav {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+#nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links {
+    padding: 10px;
+}
+
+#nav #part1 {
+    height: 82px;
+    overflow: hidden;
+}
+
+#part1 svg {
+    display: block;
+}
+
+#nav-part2 #links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+#icon{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icon i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+
+}
+
+#cursor {
+    height: 180px;
+    width: 180px;
+    background-color: rgba(224, 139, 189, 0.814);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+#page1{
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  padding: 10vw 1vw;
+  /* background: #89A8B2; */
+}
+#page1 h1{
+    font-size: 15.8vw;
+    text-transform: uppercase;
+    font-family: "futura";
+    line-height: 15vw;
+    letter-spacing: -8px;
+    
+}
+#video-container{
+    height: 100vh;
+    background-color: #A6AEBF;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding: 1.8vw 1.14vw;
+    background-color: black;
+    color: white;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: "futura";
+    position: fixed;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-evenly;
+}
+#page2 .elem{
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+#page2 .elem .dets {
+    height: 30px;
+    border-radius: 20px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    background-color: #F1F0E9;
+    overflow: hidden;
+}
+#page2 .elem .dets:hover{
+    height: 250px;
+}
+#page2 .elem .dets ul{
+    position: absolute;
+    top: -10px;
+    height: 60px;
+    border-radius: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #E5D0AC;
+}
+#page2 #elem2 .dets{
+    background-color: #C7D9DD;
+}
+#page2 #elem3 .dets{
+    background-color: #FBFBFB;
+}
+#page2 #elem2 .dets ul{
+    background-color: #A1E3F9;
+}
+#page2 #elem3 .dets ul{
+    background-color: #F5ECD5;
+}
+#page2 .elem .dets .pp{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#page2 .elem .dets .con2{
+    height: 100px;
+    width: 100px;
+}
+#page2 .elem .dets .con1{
+    height: 100px;
+    width: 100px;
+}
+.con1 h5{
+    text-transform: uppercase;
+}
+.con2 h5{
+    text-transform: uppercase;
+}
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child {
+    height: 54vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img {
+    height: 100%;
+}
+.page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.page4 #box1{
+    display: flex;
+    justify-content: space-around;
+}
+.page4 #box1 a{
+    text-decoration: none;
+    color: #333;
+    margin-top: 80px;
+}
+#box1 span{
+    font-size: 25px;
+    font-weight: 800;
+}
+#box2{
+    position: absolute;
+    top: 40%;
+    left: 17%;
+}
+#box2 h1{
+    width: 80%;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: "futura";
+    line-height:1;
+    text-align: center;
+}
+#box3{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 7%;
+    width: 30%;
+    background-color: #333;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 50px;
+    color: white;
+}
+
+#box4{
+    opacity: 0;
+}
+
+@media(max-width:600px){
+    #nav {
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #nav #nav-part2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #links {
+        padding: 10px;
+        display: none;
+    }
+
+    #part1 {
+        height: 67px;
+        overflow: hidden;
+    }
+
+    #nav-part1 svg {
+        display: block;
+        height: 67px;
+        width: 80px;
+    }
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    #icon {
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #F7F7F7;
+    }
+
+    #nav-part2 #icon i {
+        font-size: 15px;
+        margin: 0 20px;
+        font-weight: 100;
+    }
+    #page1 h1{
+        font-size: 16vw;
+        letter-spacing: -3px;
+    }
+    #page1{
+        min-height: 70vh;
+        position: relative;
+        width: 100%;
+        padding: 0vw 3vw;
+        padding-top: 25vh;
+      }
+
+      #video-container{
+        height: 25vh;
+        margin-top: 3vw;
+    }
+    #video-container #play{
+        padding: 8vw 5vw;
+        font-size: 4.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+    }
+    #page2{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 5vw 3vw;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #page2 .elem{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+    #page2 .elem{
+        height: 200vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    #page2 .elem .dets {
+        height: 30px;
+        border-radius: 20px;
+        width: 70%;
+        position: absolute;
+        z-index: 9;
+        top: 15vh;
+        left: 45vw;
+        transform: translate(-50%,-50%);
+        background-color: #FDFAF6;
+        overflow: hidden;
+    }
+    #page3 {
+        min-height: 120vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .child {
+        height: 54vh;
+        width: 88vw;
+        position: relative;
+        padding: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .child img {
+        height: 100%;
+    }
+    .page4 #box1 a{
+        margin-top: 30px;
+        width: 50px;
+    }
+    #box1 span{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #box2{
+        position: absolute;
+        top: 20%;
+        left: 17%;
+    }
+    #box2 h1{
+       line-height: 2.2vh;
+    }
+    .page4{
+        height: 100vh;
+        width: 100%;
+    }
+    #box3{
+        position: absolute;
+        bottom: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+    }
+    #box3 h2{
+        font-size: 20px;
+        padding: 15px;
+    }
+    #box4{
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-34%, 0%);
+        opacity: 1;
+    }
+    #box4 h2{
+        position: absolute;
+        bottom: 12%;
+        left: 13%;
+        font-family: "Varela Round", sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+    }
+}
