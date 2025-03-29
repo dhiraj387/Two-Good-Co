@@ -225,7 +225,7 @@ body{
 .child img {
     height: 100%;
 }
-.page4{
+/* .page4{
     height: 100vh;
     width: 100%;
     position: relative;
@@ -272,7 +272,7 @@ body{
 
 #box4{
     opacity: 0;
-}
+} */
 
 @media(max-width:600px){
     #nav {
@@ -406,7 +406,7 @@ body{
     .child img {
         height: 100%;
     }
-    .page4 #box1 a{
+/*     .page4 #box1 a{
         margin-top: 30px;
         width: 50px;
     }
@@ -436,8 +436,8 @@ body{
     #box3 h2{
         font-size: 20px;
         padding: 15px;
-    }
-    #box4{
+    } */
+/*     #box4{
         height: 50%;
         width: 100%;
         position: absolute;
@@ -453,5 +453,5 @@ body{
         font-family: "Varela Round", sans-serif;
         font-weight: 600;
         font-size: 25px;
-    }
+    } */
 }
